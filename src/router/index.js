@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/quiz-example',
     name: 'quiz-example',
-    component: () => import('../components/QuizExample')
+    component: () => import('../views/QuizExample')
   }
 ]
 
