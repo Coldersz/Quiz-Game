@@ -4,11 +4,11 @@
       <div class="row">
         <div class="col-12">
           <div class="mt-5">
-            <div class="welcome-card card border-0 rounded-lg shadow">
+            <div class="welcome-card card border-0 shadow">
               <h1 class="title display-4">Welcome to our Quiz!</h1>
-              <div class="card-body">
+              <div class="card-body mt-5">
                 <router-link
-                  class="start-quiz-btn btn btn-lg px-5 mt-5 rounded-pill text-white"
+                  class="start-quiz-btn btn btn-lg mt-5 rounded-pill text-white"
                   to="/quiz-example"
                 >Start Quiz</router-link>
               </div>
@@ -32,6 +32,7 @@ $heading: "Poppins", sans-serif;
 
 .welcome-card {
   padding: 150px;
+  border-radius: 30px;
   .title {
     font-family: $heading;
   }
@@ -39,6 +40,10 @@ $heading: "Poppins", sans-serif;
   .start-quiz-btn {
     background: $primaryColor;
     font-family: $heading;
+    padding: 12px 85px;
+    &:hover {
+      background: darken($primaryColor, 10%);
+    }
   }
 }
 </style>
