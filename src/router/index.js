@@ -9,9 +9,15 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/quiz-example',
+    name: 'quiz-example',
+    component: () => import('../components/QuizExample')
   }
 ]
 
 export default new VueRouter({
+  mode: 'history',
   routes
 })
